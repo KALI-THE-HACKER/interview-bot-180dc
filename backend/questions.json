@@ -1,0 +1,74 @@
+{
+    "questions": [
+        {
+            "id": "1",
+            "question": "Describe a scenario where you encountered a performance bottleneck in your Node.js backend API. How did you identify the bottleneck, and what strategies did you employ to resolve it, considering the event loop and asynchronous nature of Node.js?",
+            "template": "The candidate should outline a practical approach to performance debugging in Node.js. This would involve using profiling tools, analyzing CPU/memory usage, and identifying synchronous blocking operations or inefficient asynchronous patterns. Solutions might include optimizing I/O operations, implementing caching, leveraging worker threads, or refactoring callback hell into Promises/async-await.",
+            "criteria": "Assesses practical experience with Node.js performance tuning, understanding of the event loop, asynchronous programming, and debugging skills. Look for specific examples and a structured problem-solving methodology.",
+            "category": "Project Based"
+        },
+        {
+            "id": "2",
+            "question": "You've built a 'Simple Linux Utility Tool.' Can you elaborate on the system calls you might have utilized or considered for interacting with the operating system at a fundamental level, and what were the trade-offs compared to using higher-level Node.js modules?",
+            "template": "The candidate should demonstrate an understanding of Linux system calls relevant to utility tool development (e.g., `open`, `read`, `write`, `fork`, `exec`, `stat`). They should be able to explain why one might choose to use system calls directly for performance or specific low-level control, and conversely, when using Node.js abstractions (like `fs` module) is more practical and maintainable.",
+            "criteria": "Evaluates knowledge of Linux system fundamentals and the ability to differentiate between low-level OS interactions and higher-level programming abstractions. Assesses understanding of trade-offs in system programming.",
+            "category": "Project Based"
+        },
+        {
+            "id": "3",
+            "question": "In the context of your 'Backend API Demo (Node.js)' project, how would you implement robust error handling and data validation to ensure API resilience and security, particularly when dealing with external or user-provided input?",
+            "template": "The candidate should detail a layered approach to validation and error handling. This includes client-side (though focus should be on server-side), middleware for request validation, input sanitization, and consistent error response formats (e.g., using appropriate HTTP status codes and JSON error objects). Mentioning libraries like `express-validator` or custom validation logic would be beneficial.",
+            "criteria": "Assesses understanding of critical backend development practices: input validation, sanitization, and structured error management. The answer should reflect a proactive approach to building secure and reliable APIs, demonstrating awareness of potential vulnerabilities.",
+            "category": "Project Based"
+        },
+        {
+            "id": "4",
+            "question": "Explain how the event loop and asynchronous programming in Node.js contribute to efficient backend API performance.",
+            "template": "The candidate should describe the non-blocking I/O model of Node.js, explaining how the event loop handles multiple requests without blocking threads. They should discuss the roles of callbacks, Promises, and async/await in managing asynchronous operations and their impact on responsiveness and concurrency.",
+            "criteria": "The answer should clearly define the event loop and asynchronous programming in Node.js. It should connect these concepts to backend API performance by explaining how they enable handling many concurrent requests efficiently, leading to better throughput and lower latency. Mentioning non-blocking I/O is crucial.",
+            "category": "Theory Based"
+        },
+        {
+            "id": "5",
+            "question": "Describe the role of RESTful principles in designing a robust Backend API, and how they relate to HTTP methods like GET, POST, and PUT.",
+            "template": "The candidate should explain what REST (Representational State Transfer) is, focusing on its architectural constraints. They should then detail the purpose of key HTTP methods (GET for retrieval, POST for creation, PUT for update/replace, DELETE for removal) in the context of interacting with resources and how these align with RESTful principles like statelessness and uniform interface.",
+            "criteria": "The answer should demonstrate an understanding of REST as an architectural style and its core principles. It needs to accurately describe the common HTTP methods and their intended uses in API interactions, emphasizing how adherence to these principles leads to a more predictable, scalable, and maintainable API.",
+            "category": "Theory Based"
+        },
+        {
+            "id": "6",
+            "question": "What is the importance of file system permissions and ownership in Linux, and how do they contribute to system security?",
+            "template": "The candidate should explain the concepts of file permissions (read, write, execute) for owner, group, and others, and the role of ownership (user and group). They should then elaborate on how these mechanisms control access to files and directories, preventing unauthorized modifications or access and thus enhancing the overall security posture of the operating system.",
+            "criteria": "The answer should clearly define file permissions and ownership in Linux. It must explain how these controls are applied to specific files and directories and articulate their significance in maintaining system security by limiting access to authorized users and processes.",
+            "category": "Theory Based"
+        },
+        {
+            "id": "7",
+            "question": "Describe a scenario where you had to design and implement a RESTful API for a backend service. What were the key considerations for designing the API endpoints, request/response formats, and error handling? How did you ensure scalability and maintainability of the API?",
+            "template": "The candidate should explain the process of designing a RESTful API, including identifying resources, defining HTTP methods (GET, POST, PUT, DELETE), structuring request and response payloads (e.g., JSON), implementing appropriate status codes for success and failure, and designing for versioning. They should also touch upon considerations for scalability (e.g., pagination, caching) and maintainability (e.g., clear documentation, consistent naming conventions, modular design). Demonstrating knowledge of backend development principles and potentially microservices architecture would be beneficial.",
+            "criteria": "Evaluates understanding of RESTful API design principles, experience with backend development, ability to consider scalability and maintainability, and clarity in explaining technical concepts. Look for a structured approach to API design and an awareness of common backend challenges.",
+            "category": "Skill Based"
+        },
+        {
+            "id": "8",
+            "question": "Imagine you are tasked with building a simple Linux utility tool that processes log files. Explain how you would approach this task, considering aspects like file parsing, error handling, and potential performance optimizations. What Python libraries or Linux commands would you leverage, and how would you manage dependencies and version control for your tool?",
+            "template": "The candidate should outline a plan for creating a Linux utility tool using Python. This would involve mentioning relevant Python libraries for file I/O (e.g., `open()`, `with open()`), string manipulation, and potentially regular expressions (e.g., `re` module) for parsing log data. They should also consider error handling strategies (e.g., `try-except` blocks) and how to make the tool efficient (e.g., processing lines efficiently, avoiding large memory footprints). Mentioning the use of standard Linux commands for file manipulation or piping could also be relevant. Finally, they should discuss dependency management (e.g., `pip`, `requirements.txt`) and version control using Git.",
+            "criteria": "Assesses practical application of Python for system tasks, knowledge of Linux environments and commands, understanding of file processing techniques, awareness of error handling and performance optimization, and familiarity with development tools like Git and package management.",
+            "category": "Skill Based"
+        },
+        {
+            "id": "9",
+            "question": "Imagine you are working on a critical backend feature for a new product at IBM. Midway through development, you discover a significant architectural flaw in the existing codebase that will impact the performance and scalability of your feature. Your deadline is approaching, and your team lead is focused on other priorities. How would you address this situation, considering the urgency and potential impact on the project?",
+            "template": "The candidate should describe a structured approach to analyzing the flaw, quantifying its impact, and proposing solutions. They should articulate how they would communicate this to their team lead and other stakeholders, potentially suggesting a trade-off or a phased approach to mitigate risks while still meeting some deadlines. The approach should demonstrate proactivity, problem-solving skills, and effective communication under pressure.",
+            "criteria": "The answer should demonstrate: Proactive identification and analysis of the problem. Clear communication strategy for escalating the issue. Ability to propose potential solutions or mitigation strategies. Consideration of project deadlines and team priorities. Understanding of the impact on scalability and performance. Professionalism in handling a challenging technical situation.",
+            "category": "Situation Based"
+        },
+        {
+            "id": "10",
+            "question": "You are part of a project team where a junior developer is struggling to understand and implement a complex backend module. They have missed a couple of internal deadlines, and their lack of progress is starting to affect the overall project timeline. You have been assigned to review their code. Describe how you would approach this situation to help the junior developer improve without demotivating them or causing undue friction within the team.",
+            "template": "The candidate should outline a supportive and constructive approach. This would involve first understanding the junior developer's challenges (e.g., through direct conversation or code review) and then providing clear, actionable feedback. The approach should focus on collaborative problem-solving, offering guidance and resources, and potentially breaking down the complex module into smaller, manageable tasks. The candidate should emphasize empathy and a team-oriented mindset.",
+            "criteria": "The answer should demonstrate: Empathy and understanding towards the junior developer's struggles. A constructive and non-judgmental approach to feedback. Clear communication strategy for providing guidance. Willingness to mentor and support team members. Focus on collaborative problem-solving and knowledge transfer. Awareness of the impact on project timelines and team dynamics.",
+            "category": "Situation Based"
+        }
+    ]
+}
